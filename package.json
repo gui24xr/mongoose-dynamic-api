@@ -1,0 +1,29 @@
+{
+  "name": "mongoose-dynamic-api",
+  "version": "1.0.0",
+  "description": "API dinámica para Mongoose que genera automáticamente endpoints CRUD",
+  "main": "src/index.js",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "mongoose",
+    "express",
+    "api",
+    "crud",
+    "dynamic"
+  ],
+  "author": "Guillermo Guardia",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "express": "^4.21.2",
+    "mongoose": "^8.13.1",
+    "mongoose-autopopulate": "^1.1.0",
+    "swagger-ui-express": "^5.0.1"
+  }
+}
