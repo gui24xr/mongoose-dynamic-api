@@ -37,7 +37,6 @@ const getFakeUsersFromDB = async() => {
     try{
         await createFileIfNotExist()
         const usersList = JSON.parse(await fs.readFile(FAKE_USERS_DB_PATH_FILE, 'utf8'))
-        console.log('getFakeUsersFromDB2', usersList)
         return usersList
        
     }catch(error){
