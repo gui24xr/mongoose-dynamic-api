@@ -1,6 +1,6 @@
 {
   "name": "mongoose-dynamic-api",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "API dinámica para Mongoose que genera automáticamente endpoints CRUD",
   "main": "src/index.js",
   "type": "module",
