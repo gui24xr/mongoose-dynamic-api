@@ -63,7 +63,7 @@ class MongooseDynamicApi {
     #addCollectionsRoutes = () => {
 
         this.entitiesList.forEach(item => {
-            const requestGroup = makeRequestGroup({ model: item.model })
+            const requestGroup = makeRequestGroup({ model: item.model, logging: this.loggingEnabled })
             this.router.post(`/${item.collectionName}`, requestGroup.postRequest)
             this.router.get(`/${item.collectionName}/:id`, requestGroup.getByIdRequest)
             this.router.get(`/${item.collectionName}`, requestGroup.getByQueryRequest)
